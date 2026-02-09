@@ -87,3 +87,41 @@ and V = [v1 v2]
 ```
 
 This ellipse shares the same axes directions v1, v2.
+
+## Step-by-step Bokeh visualizations
+
+GitHub README cannot render Bokeh interactively. Instead, we generate PNGs from Bokeh and commit them into `assets/`.
+
+### Setup
+
+```bash
+python3 -m pip install numpy bokeh
+```
+
+To generate images, run the last cell in `eigen_vectors_vis.ipynb`. It will try to export PNGs into `assets/`.
+
+### Step 1 — raw point cloud
+
+![](assets/step1_point_cloud.png)
+
+### Step 2 — show the mean (center)
+
+![](assets/step2_mean.png)
+
+### Step 3 — covariance ellipse (from Σ)
+
+![](assets/step3_cov_ellipse.png)
+
+### Step 4 — eigenvectors as principal axes
+
+![](assets/step4_eigen_axes.png)
+
+### Step 5 — final combined view (points + ellipse + axes)
+
+![](assets/step5_combined.png)
+
+If PNG export fails in your environment, install export dependencies:
+
+```bash
+python3 -m pip install selenium webdriver-manager pillow
+```
