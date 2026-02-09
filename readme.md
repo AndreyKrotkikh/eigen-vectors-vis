@@ -90,16 +90,6 @@ This ellipse shares the same axes directions v1, v2.
 
 ## Step-by-step Bokeh visualizations
 
-GitHub README cannot render Bokeh interactively. Instead, we generate PNGs from Bokeh and commit them into `assets/`.
-
-### Setup
-
-```bash
-python3 -m pip install numpy bokeh
-```
-
-To generate images, run the last cell in `eigen_vectors_vis.ipynb`. It will try to export PNGs into `assets/`.
-
 ### Step 1 — raw point cloud
 
 ![](assets/step1_point_cloud.png)
@@ -119,9 +109,3 @@ To generate images, run the last cell in `eigen_vectors_vis.ipynb`. It will try 
 ### Step 5 — final combined view (points + ellipse + axes)
 
 ![](assets/step5_combined.png)
-
-If PNG export fails in your environment, install export dependencies:
-
-```bash
-python3 -m pip install selenium webdriver-manager pillow
-```
